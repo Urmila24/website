@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png"
     href="utv-letter-logo-design-black-background-creative-initials-concept-243745779.jpg">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -39,19 +40,25 @@
         </div>
 
     </section>
-    <!-- end of hero section  -->
+    <!-- end of hero section  -->  
+    <section id="seperate"></section>
     <!-- start of about section  -->
     <section id="about">
         <div class ="container">
-            <div>
+            <div class="about-box1">
                 <img src="profile.jpg" alt=" profile.jpg" height="300px" width="300px">
             </div>
-            <div>
+            <div class="about-box2">
                 <h1>About me</h1>
                 <p> I am Electronics and communication engineering student of GCEK.Motivated junior web developer.I am
                     able to work well both in a team environment as well as using own initiative .Passionate about
-                    collaborating with a team when working on projects.</p>
-            </div>
+                    collaborating with a team when working on projects.
+                </p>
+            <button onclick="changecontent()">Know more</button>
+            <p id="know-more"> I am Electronics and communication engineering student of GCEK.Motivated junior web developer.I am
+                able to work well both in a team environment as well as using own initiative .Passionate about
+                collaborating with a team when working on projects.
+            </p>
             <button> Download CV</button>
         </div>
     </section>
@@ -59,8 +66,9 @@
     <!-- skill section  -->
     <section id="skills">
         <div class ="container">
-            <h2> My Skills</h2>
-            <div>
+            <h2 style="background-color: blue; display: inline"> My Skills</h2>
+            <div class="box card card-1">
+
                 <img src="html.gif" alt="webdevelopment image" height="100px" width="100px">
                 <h3> Web Development</h3>
                 <p> Motivated junior web developer looking for a role as full-stack web developer . Passionate about
@@ -68,39 +76,38 @@
                 </p>
 
             </div>
-            <div>
+            <div class="box card card-1">
                 <img src="design.gif" alt="designimage" height="100px" width="100px">
                 <h3> Design</h3>
                 <p> Skilled with Adobe Photoshop and Canva. Coachable and passionate about collaborating with a team
-                    when working on projects. '</p>
+                    when working on projects</p>
             </div>
-        </div>
-        <div>
+        
+        <div class="box card card-1">
             <img src="coding.gif" alt="codingimage" height="100px" width="100px">
             <h3> Coding</h3>
             <p> Programming language knowledge in C programming and Python </p>
         </div>
-        </div>
+        
         </div>
 
     </section>
     <!-- end of skill section  -->
     <!-- contact section  -->
+    <section style="background-color:  #1b4b54;">
+        <br>
     <section id="forms">
         <div class ="container">
             <h2>
                 Let's Connect
             </h2>
             <form action="">
-                <div>
-                    <label for=""> </label>
-                    <input type="text">
-                </div>
-                <div>
+                
+                <div class="form-group">
                     <label for="name"> Name:</label>
                     <input type="text">
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="email">Email: </label>
                     <input type="email">
                 </div>
@@ -109,12 +116,14 @@
                     <textarea cols="42" rows="5" tableindex="4"></textarea>
 
                 </div>
-                <div>
+                <div class="form-group">
                     <input class="button" type="submit">
                 </div>
             </form>
         </div>
     </section>
+    <br>
+</section>
     <!-- end of contact section  -->
 
     <!-- footer section  -->
